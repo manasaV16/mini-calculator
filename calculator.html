@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+<tittle></tittle>
+<link rel="stylesheet" href="calculator.css">
+
+<!--There are 3 types of ways to we can add css file into the html:
+1.inline- you can write  "style" attribute in the html ex=<p style='color:red;'>manasa </p>
+2.internal - ypu can write only in in side the head section <style>
+    ex:body {background-color: powderblue;}
+h1   {color: blue;}
+3.external= you can write the <link> to html section as i below wrote 
+-->
+<script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+<div class="calculator">
+    <!-- it's a block of element, it takes all width and before and after -->
+    <input type="text" id="display" readonly> 
+    <!--it's a single type of text box-->
+        <button onclick="clearDisplay()">C</button>
+        <!--defining the button -->
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('')">-</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+
+</div>
+</body>
+</html>
